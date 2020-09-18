@@ -1,0 +1,5 @@
+# schema를 담당하는 부분
+
+type Query {
+  name: String!
+}
