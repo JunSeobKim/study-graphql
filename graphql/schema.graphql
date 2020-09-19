@@ -1,5 +1,13 @@
 # schema를 담당하는 부분
-
-type Query {
+type Person {
+  id: Int!
   name: String!
+  age: Int!
+  gender: String!
+}
+
+# schema의 중간 역할
+type Query {
+  person: [Person]!
+  people(id: Int!): Person
 }
