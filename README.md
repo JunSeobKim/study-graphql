@@ -13,6 +13,10 @@
 
 ---
 
-## typeDefs(스키마 정의) <--> resolvers(post 형식, 받은 요청에 따라 원하는 값을 return) <--> [Database]
+## typeDefs(스키마 정의) <-->
+
+## resolvers(post 형식, 받은 요청에 따라 원하는 값을 return) <-->
+
+## [Database]
 
 ---
