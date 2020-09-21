@@ -8,6 +8,11 @@ type Person {
 
 # schema의 중간 역할
 type Query {
-  person: [Person]!
-  people(id: Int!): Person
+  people: [Person]!
+  person(id: Int!): Person
+}
+
+# database에 추가, 삭제 등 영향을 주는 부분 control
+type Mutation {
+  addPeople(name: String!, age: Int!, gender: String!): Person!
 }
