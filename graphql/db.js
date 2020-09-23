@@ -50,11 +50,23 @@ export const getById = (id) => {
 
 export const addPeople = (name, age, gender) => {
   let newPeople = {
-    id: people.length,
+    id: people[people.length - 1].id + 1,
     name,
     age,
     gender,
   };
   people.push(newPeople);
   return newPeople;
+};
+
+export const deletePeople = (id) => {
+  try {
+    people.splice(
+      people.findIndex((ele) => ele.id === id),
+      1
+    );
+  } catch (error) {
+    return false;
+  }
+  return true;
 };

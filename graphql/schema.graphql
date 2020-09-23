@@ -15,4 +15,5 @@ type Query {
 # database에 추가, 삭제 등 영향을 주는 부분 control
 type Mutation {
   addPeople(name: String!, age: Int!, gender: String!): Person!
+  deletePeople(id: Int!): Boolean!
 }
