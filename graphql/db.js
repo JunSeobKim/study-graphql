@@ -1,3 +1,22 @@
+// graphql 감싸기
+import axios from "axios";
+
+const API_KEY = "https://yts.mx/api/v2/list_movies.json";
+
+export const getMovie = (limit) => {
+  return axios
+    .get(API_KEY + `?limit=${limit}`)
+    .then((res) => {
+      let movies = res.data.data.movies;
+      return movies;
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    });
+};
+
+// 기본적인 graphql
 export let people = [
   {
     id: 0,

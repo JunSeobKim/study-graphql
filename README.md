@@ -20,3 +20,11 @@
 ## [Database]
 
 ---
+
+## garphql은 REST API를 감싸 이용할 수 있다.
+
+## (이미 회사에서 REST API를 이용하고 있을 때 graphql 도입 가능)
+
+## why use graphql ?
+
+## (클라이언트와 graphql playground로 소통 가능. 편리한 interface.)

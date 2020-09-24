@@ -1,4 +1,13 @@
 # schema를 담당하는 부분
+type Movie {
+  id: Int!
+  title: String!
+  rating: Float!
+  summary: String!
+  language: String!
+  medium_cover_image: String!
+}
+
 type Person {
   id: Int!
   name: String!
@@ -10,6 +19,7 @@ type Person {
 type Query {
   people: [Person]!
   person(id: Int!): Person
+  movies(limit: Int!): [Movie]!
 }
 
 # database에 추가, 삭제 등 영향을 주는 부분 control
